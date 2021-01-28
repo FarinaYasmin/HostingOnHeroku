@@ -49,20 +49,6 @@ Sarawak Baitulmal Management System (SBMS)
                   </div>
 
                   <div class="form-group row">
-                    <label for="text" class="col-md-4 col-form-label text-md-right">Phone Number</label>
-
-                    <div class="col-md-6">
-                      <input id="text" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number">
-
-                      @error('phone_number')
-                      <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                      </span>
-                      @enderror
-                    </div>
-                  </div>
-
-                  <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                       <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Password">
                       @error('password')
